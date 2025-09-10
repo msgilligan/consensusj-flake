@@ -16,7 +16,7 @@ outputs = {self, nixpkgs, ...}:
           pkgs = import nixpkgs {
             inherit system;
           };
-          mainProgram = "jsonrpc";
+          mainProgram = "jrpc";
           graalvm = pkgs.graalvmPackages.graalvm-ce;
           gradle = pkgs.gradle_8.override {
             java = graalvm;  # Run Gradle with this JDK
@@ -31,8 +31,8 @@ outputs = {self, nixpkgs, ...}:
             src = pkgs.fetchFromGitHub {
               owner = "ConsensusJ";
               repo = "consensusj";
-              rev = "0b6e70e4575e948c641d756f8484613bc8c89acd"; # master 25-09-08
-              sha256 = "sha256-+mmLJHZIK/FBOnOScKVTfL0QXCmRf18MIn6VraFxV2w=";
+              rev = "ba5a4dfc3c61b149136cca50bacdfd6595231291"; # master 25-09-09 - jrpc
+              sha256 = "sha256-mgguyBXMm6XNjHwNPKUQalgg9QxTkeJG9i1g4BzKWRg=";
             };
 
 

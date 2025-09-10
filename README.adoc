@@ -1,6 +1,6 @@
 = Package flake for ConsensusJ
 
-The main goal of this flake is to install ConsensusJ's `jsonrpc` tool.
+The main goal of this flake is to install ConsensusJ's `jrpc` tool.
 
 == Installation and use
 
@@ -10,10 +10,10 @@ nix profile install github:msgilligan/consensusj-flake#consensusj
 
 Once installed:
 ----
-jsonrpc --help
+jrpc --help
 ----
 
-Create `~/.config/jsonrpc/config.toml` with your local Bitcoin (or other JSON-RPC) servers.
+Create `~/.config/jrpc/config.toml` with your local Bitcoin (or other JSON-RPC) servers.
 
 For example:
 ----
@@ -31,13 +31,13 @@ password = "bb"
 ----
 
 ----
-jsonrpc help              # Get RPC help from default server
-jsonrpc -c btcmain help   # Get RPC help from 'btcmain' in 'config.toml'
+jrpc help              # Get RPC help from default server
+jrpc -c btcmain help   # Get RPC help from 'btcmain' in 'config.toml'
 ----
 
 == Run Directly From This Repo
 
-To run the natively-compiled `jsonrpc` tool:
+To run the natively-compiled `jrpc` tool:
 
 ----
  nix run github:msgilligan/consensusj-flake#consensusj
