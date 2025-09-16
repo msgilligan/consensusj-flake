@@ -1,5 +1,8 @@
 = Package flake for ConsensusJ
 
+NOTE:: This functionality has been moved upstream to https://github.com/ConsensusJ/consensusj/ and this repository has been archived.
+
+
 The main goal of this flake is to install ConsensusJ's `jrpc` tool.
 
 == Installation and use
